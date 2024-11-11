@@ -10,7 +10,7 @@ class Router {
                 $controller = 'HomeController';
                 $method = 'index';
                 break;
-            case 'about':
+            case 'sobre':
                 $controller = 'AboutController';
                 $method = 'index';
             break;    

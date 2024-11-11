@@ -3,4 +3,5 @@ RewriteEngine On
 # Redireciona todas as requisições para index.php, exceto arquivos e diretórios existentes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+#RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^([a-zA-Z0-9-]+)$ index.php?url=$1 [L,QSA]
