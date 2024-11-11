@@ -13,7 +13,11 @@ class Router {
             case 'sobre':
                 $controller = 'AboutController';
                 $method = 'index';
-            break;    
+            break;
+            case 'db':
+                $controller = 'DbController';
+                $method = 'index';
+            break;      
             
             default:
                 # code...
